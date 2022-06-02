@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.dropbtn {
+  background-color: #23d31d;
+  color: rgb(255, 255, 255);
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #0de6ee;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: rgb(221, 200, 15);}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3928d1;}
+</style>
+</head>
+<body>
+
+<h2>DROPDOWN</h2>
+<p>MENU</p>
+
+<div class="dropdown">
+  <button class="dropbtn">Dropdown</button>
+  <div class="dropdown-content">
+    <a href="#">pop()</a>
+    <a href="#">join()</a>
+    <a href="#">push()</a>
+    <a href="#">shift()</a>
+    <a href="#">unshift()</a>
+    <a href="#">delete()</a>
+    <a href="#">splice()</a>
+    
+
+  </div>
+</div>
+<Script>
+var myinputarr=[]
+var size=4;
+for(var a=0;a<size;a++)
+{
+    myinputarr[a] = prompt( ' Enter array element ' +(a+1)); 
+}
+console.log(myinputarr);
+</Script>
+
+</body>
+</html>
+
